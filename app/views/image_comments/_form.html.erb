@@ -1,0 +1,11 @@
+<h2>コメントフォーム</h2>
+<%= form_for(@image_comment) do |f| %>
+<div class= "field">
+<%= f.label :comment %><br>
+<%= f.text_field :comment %>
+<%= f.hidden_field :image_id, :value => @image.id %>
+</div>
+<div class="actions">
+<%= f.submit %>
+</div>
+<% end %>
